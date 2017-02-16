@@ -1,5 +1,5 @@
---@deve_poent
---@DEV_s_o
+--@aymanwasfe1
+--@Mostank_GT
 local function run(msg, matches)
 if matches[1] == 'help' and is_owner(msg) then
  local help = [[
@@ -56,5 +56,5 @@ return {
   },
   run = run
 }
---@deve_poent
---@DEV_s_o
+--@aymanwasfe1
+--@Mostank_GT
