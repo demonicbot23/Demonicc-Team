@@ -29,9 +29,9 @@ mute_audio = "no"
                   }
       }
       save_data(_config.group.data, group)
-tg.sendMessage(msg.chat_id, msg.id_, 1, 'تم تفعيل المجموعه✔️', 1)
+tg.sendMessage(msg.chat_id, msg.id_,1, ' تُم تُفُعيّل ٱلبّوِتُ بّلمجَموِعۂ تُٱجَ مخٌيّ✔️', 1)
 else
-tg.sendMessage(msg.chat_id, msg.id_, 1, ' المجموعه مفعله سابقا ✔️', 1)
+tg.sendMessage(msg.chat_id, msg.id_, 1, ' ٱلمجَموِعۂ مفُعلۂ سًٱبّقَٱ ✔️', 1)
 end
 end
 local function remgroup(msg)
@@ -40,9 +40,9 @@ local groupa = group[tostring(msg.chat_id)]
 if groupa then
 group[tostring(msg.chat_id)] = nil
       save_data(_config.group.data, group)
-tg.sendMessage(msg.chat_id, msg.id_, 1, 'تم ايقاف البوت❌', 1)
+tg.sendMessage(msg.chat_id, msg.id_, 1, 'تُم ٱيّقَٱفُ ٱلبّوِتُ❌', 1)
 else
-tg.sendMessage(msg.chat_id, msg.id_, 1, '  تم ايقاف البوت سابقا❌', 1)
+tg.sendMessage(msg.chat_id, msg.id_, 1, '  تُم ٱيّقَٱفُ ٱلبّوِتُ سًٱبّقَٱ❌', 1)
 end
 end
 
@@ -55,8 +55,8 @@ end
 end
 return {
   patterns = {
-    "^[/#!](add)$",
-    "^[/#!](rem)$",
+    "^[/#!](تفعيل)$",
+    "^[/#!](تعطيل)$",
 "^!!!edit:[/#!](add)$",
     "^!!!edit:[/#!](rem)$"
   },
