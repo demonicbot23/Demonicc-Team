@@ -32,7 +32,7 @@ if matches[1] == 'help' and is_owner(msg) then
 /unmute pho ⇰ ⇰ لفتح الصور
 /mute doc ⇰ ⇰ لقفل الملفات
 /unmute doc ⇰ ⇰ لفتح الملفات
-/mute gif ⇰ ⇰ لقفل المتحركة
+/mute gif :⇰⇰ لقفل المتحركة
 /unmute gif ⇰ ⇰ لفتح المتحركة
 /mute aud ⇰ ⇰ mp3 لقفل
 /unmute aud ⇰ ⇰ mp3 لفتح
@@ -41,8 +41,8 @@ if matches[1] == 'help' and is_owner(msg) then
 /mute vid ⇰ ⇰ لقفل الفيديو
 /unmute vid ⇰ ⇰ لفتح الفيديو
 ➖➖➖➖➖➖➖➖➖➖➖➖
-DEV           ⇰ ⇰ @deve_poent
-CHBOT     ⇰ ⇰ @DEV_s_o
+DEV           ⇰ ⇰ @Mostank_GT
+CHBOT     ⇰ ⇰ @Ol56lO_dev
 VR=V2
 ]]
 
@@ -52,7 +52,7 @@ end
 end
 return {
   patterns = {
-    "^[#!/](help)$",
+    "^[#!/](الاوامر)$",
   },
   run = run
 }
