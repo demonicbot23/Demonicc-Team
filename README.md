@@ -14,9 +14,9 @@ sudo apt-get upgrade
 sudo apt-get dist-upgrade
 sudo ppa-purge
 
-git clone https://github.com/mostafapoent/akeshnha.git
+git clone https://github.com/aymanhaider/DeMoNic.BoT1.git
 
 
-cd akeshnha
+cd DeMoNic.BoT1
 chmod +x install
 ./install
