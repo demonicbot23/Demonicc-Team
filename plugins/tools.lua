@@ -1,7 +1,7 @@
---@aymanwasfe1
---@Mostank_GT
+--@IH_Hl
+--@A9_y8
 local function run(msg, matches)
-if matches[1] == 'id'  then
+if matches[1] == 'ايدي'  then
 tg.sendMessage(msg.chat_id, msg.id_, 1, 'your id : ['..msg.from_id..']️', 1)
 end
 if matches[1] == 'del' and is_momod(msg) then
@@ -11,12 +11,12 @@ if matches[1] == 'بوت'  then
    tg.sendMessage(msg.chat_id, msg.id_, 1, 'عوفني بشغلي 👨‍💻️', 1)
 end
 if matches[1] == 'المطور'  then
-   tg.sendMessage(msg.chat_id, msg.id_, 1, '@Ol56lO_dev', 1)
+   tg.sendMessage(msg.chat_id, msg.id_, 1, '@IH_Hl', 1)
 end
-	if matches[1] == 'pin' and is_owner(msg) then
+	if matches[1] == 'تثبيت' and is_owner(msg) then
 	    tg.pinChannelMessage(msg.chat_id_, msg.reply_to_message_id_, 1)
 		tg.sendMessage(msg.chat_id_, 0, 0,  'تم تثبيت الرساله☑️', 0)
-	elseif matches[1] == 'unpin' and is_owner(msg) then
+	elseif matches[1] == 'الغاء التثبيت' and is_owner(msg) then
 	    tg.unpinChannelMessage(msg.chat_id_)
 		tg.sendMessage(msg.chat_id_, 0, 0,  ' تم ازالة الرسائل المثبته❌', 0)
 
@@ -24,16 +24,16 @@ end
 end
 return {
   patterns = {
-    "^[#!/](id)$",
+    "^[#!/](ايدي)$",
      "^(بوت)$",
-    "^[#!/](pin)$",
+    "^[#!/](تثبيت)$",
     "^(المطور)$",
-    "^[#!/](del)$",
-    "^[#!/](unpin)$"
+    "^[#!/](حذف)$",
+    "^[#!/](الغاء التثبيت)$"
      
      
   },
   run = run
 }
---@aymanwasfe1
---@Mostank_GT
+--@IH_Hl
+--@A9_y8
