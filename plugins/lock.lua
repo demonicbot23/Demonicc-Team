@@ -1,5 +1,5 @@
---@aymanwasfe1
---@Mostank_GT
+--@IH_Hl
+--@A9_y8
 local function settings(msg, target,group)
 local group = load_data('bot/group.json')
 pm = '🔧SuperGroup settings 🔧'
@@ -521,5 +521,5 @@ return {
   },
   run = run
 }
---@aymanwasfe1
---@Mostank_GT
+--@IH_Hl
+--@A9_y8
