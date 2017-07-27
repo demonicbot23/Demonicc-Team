@@ -1,5 +1,5 @@
---@aymanwasfe1
---@Mostank_GT
+--@IH_Hl
+--@A9_y8
 local function run(msg, matches)
 local addgroup = group[tostring(msg.chat_id)]
 if addgroup then
@@ -105,5 +105,5 @@ return {
   },
   run = run
 }
---@aymanwasfe1
---@Mostank_GT
+--@IH_Hl
+--@A9_y8
