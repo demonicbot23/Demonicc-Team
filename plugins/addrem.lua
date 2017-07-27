@@ -1,5 +1,5 @@
---@aymanwasfe1
---@Mostank_GT
+--@IH_Hl
+--@A9_y8
 local function addgroup(msg)
 local group = load_data('bot/group.json')
 local groupa = group[tostring(msg.chat_id)]
@@ -57,10 +57,10 @@ return {
   patterns = {
     "^[/#!](تفعيل)$",
     "^[/#!](تعطيل)$",
-"^!!!edit:[/#!](add)$",
-    "^!!!edit:[/#!](rem)$"
+"^!!!edit:[/#!](تفعيل)$",
+    "^!!!edit:[/#!](تعطيل)$"
   },
   run = run
 }
---@aymanwasfe1
---@Mostank_GT
+--@IH_Hl
+--@A9_y8
