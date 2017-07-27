@@ -1,5 +1,5 @@
---@aymanwasfe1
---@Mostank_GT
+--@IH_Hl
+--@A9_y8
 local function run(msg, matches)
 
 	if matches[1] == 'bc' and is_sudo(msg) then
@@ -26,5 +26,5 @@ return {
   run = run
 
 }
---@aymanwasfe1
---@Mostank_GT
+--@IH_Hl
+--@A9_y8
