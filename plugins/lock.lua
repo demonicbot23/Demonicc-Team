@@ -17,7 +17,7 @@ pm = pm..'\n ⚙<b>Mute Voice</b> : '..(group[tostring(target)]['settings']['mut
 pm = pm..'\n ⚙<b>Mute Document</b> : '..(group[tostring(target)]['settings']['mute_document'] or 'no')..'⚙'
 pm = pm..'\n ⚙<b>Mute Audio</b> : '..(group[tostring(target)]['settings']['mute_audio'] or 'no')..'⚙'
 pm = pm..'\n ⚙<b>Mute Gif</b> : '..(group[tostring(target)]['settings']['mute_gif'] or 'no')..'⚙'
-pm = pm..'\n<b>  create by @deve_poent</b>'
+pm = pm..'\n<b>  create by @IH_Hl</b>'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 end
 local function lock_group_inline(msg, target)
@@ -433,74 +433,74 @@ end
 local function run(msg, matches)
 local addgroup = group[tostring(msg.chat_id)]
 if addgroup and is_momod(msg) then
-if matches[1] == 'settings'  then
+if matches[1] == 'العدادات'  then
 group_settings(msg, msg.chat_id)
-elseif matches[1] == 'lock' then
-if matches[2] == 'lin' then
+elseif matches[1] == 'قفل' then
+if matches[2] == 'الروابط' then
 lock_group_links(msg, msg.chat_id)
-elseif matches[2] == 'ed' then
+elseif matches[2] == 'التعديل' then
 lock_group_edit(msg, msg.chat_id)
 elseif matches[2] == 'fh' then
 lock_group_fosh(msg, msg.chat_id)
-elseif matches[2] == 'in' then
+elseif matches[2] == 'اولاين' then
 lock_group_inline(msg, msg.chat_id)
-elseif matches[2] == 'sti' then
+elseif matches[2] == 'الملصقات' then
 lock_group_sticker(msg, msg.chat_id)
-elseif matches[2] == 'fwd' then
+elseif matches[2] == 'التوجيه' then
 lock_group_fwd(msg, msg.chat_id)
-elseif matches[2] == 'use' then
+elseif matches[2] == 'المعرف' then
 lock_group_username(msg, msg.chat_id)
-elseif matches[2] == 'spa' then
+elseif matches[2] == 'الكلايش' then
 lock_group_spam(msg, msg.chat_id)
 end
-elseif matches[1] == 'unlock' then
-if matches[2] == 'lin' then
+elseif matches[1] == 'فتح' then
+if matches[2] == 'الروابط' then
 unlock_group_links(msg, msg.chat_id,group )
-elseif matches[2] == 'ed' then
+elseif matches[2] == 'التعديل' then
 unlock_group_edit(msg, msg.chat_id)
 elseif matches[2] == 'fh' then
 unlock_group_fosh(msg, msg.chat_id)
-elseif matches[2] == 'sti' then
+elseif matches[2] == 'الملصقات' then
 unlock_group_sticker(msg, msg.chat_id)
-elseif matches[2] == 'fwd' then
+elseif matches[2] == 'التوجيه' then
 unlock_group_fwd(msg, msg.chat_id)
-elseif matches[2] == 'use' then
+elseif matches[2] == 'المعرفات' then
 unlock_group_username(msg, msg.chat_id)
-elseif matches[2] == 'in' then
+elseif matches[2] == 'اولاين' then
 unlock_group_inline(msg, msg.chat_id )
-elseif matches[2] == 'spa' then
+elseif matches[2] == 'الكلايش' then
 unlock_group_spam(msg, msg.chat_id)
 end
-elseif matches[1] == 'mute' then
-if matches[2] == 'all' then
+elseif matches[1] == 'كتم' then
+if matches[2] == 'الكل' then
 mute_all_group(msg, msg.chat_id)
-elseif matches[2] == 'pho' then
+elseif matches[2] == 'الصور' then
 mute_photo_group(msg, msg.chat_id)
-elseif matches[2] == 'doc' then
+elseif matches[2] == 'الملفات' then
 mute_document_group(msg, msg.chat_id)
-elseif matches[2] == 'gif' then
+elseif matches[2] == 'الصور المتحركه' then
 mute_gif_group(msg, msg.chat_id)
-elseif matches[2] == 'aud' then
+elseif matches[2] == 'الاغاني' then
 mute_audio_group(msg, msg.chat_id)
-elseif matches[2] == 'voi' then
+elseif matches[2] == 'الصوت' then
 mute_voice_group(msg, msg.chat_id)
-elseif matches[2] == 'vid' then
+elseif matches[2] == 'الفديو' then
 mute_video_group(msg, msg.chat_id)
 end
-elseif matches[1] == 'unmute' then
-if matches[2] == 'all' then
+elseif matches[1] == 'الغاء كتم' then
+if matches[2] == 'الكل' then
 unmute_all_group(msg, msg.chat_id,group )
-elseif matches[2] == 'pho' then
+elseif matches[2] == 'الصور' then
 unmute_photo_group(msg, msg.chat_id)
-elseif matches[2] == 'doc' then
+elseif matches[2] == 'الملفات' then
 unmute_document_group(msg, msg.chat_id)
-elseif matches[2] == 'gif' then
+elseif matches[2] == 'الصور المتحركه' then
 unmute_gif_group(msg, msg.chat_id)
-elseif matches[2] == 'aud' then
+elseif matches[2] == 'الاغاني' then
 unmute_audio_group(msg, msg.chat_id)
-elseif matches[2] == 'voi' then
+elseif matches[2] == 'الصوت' then
 unmute_voice_group(msg, msg.chat_id)
-elseif matches[2] == 'vid' then
+elseif matches[2] == 'الفديو' then
 unmute_video_group(msg, msg.chat_id)
 end
 end
@@ -508,16 +508,16 @@ end
 end
 return {
   patterns = {
-    "^[/#!](lock) (.*)$",
-    "^[/#!](unlock) (.*)$",
-    "^[/#!](mute) (.*)$",
-	"^[/#!](unmute) (.*)$",
-	"^[/#!](settings)$",
-"^!!!edit:[/#!](lock) (.*)$",
-"^!!!edit:[/#!](unlock) (.*)$",
-"^!!!edit:[/#!](mute) (.*)$",
-"^!!!edit:[/#!](unmute) (.*)$",
-"^!!!edit:[/#!](settings)$",
+    "^[/#!](قفل) (.*)$",
+    "^[/#!](فتح) (.*)$",
+    "^[/#!](كتم) (.*)$",
+	"^[/#!](الغاء الكتم) (.*)$",
+	"^[/#!](العدادات)$",
+"^!!!edit:[/#!](قفل) (.*)$",
+"^!!!edit:[/#!](فتح) (.*)$",
+"^!!!edit:[/#!](كتم) (.*)$",
+"^!!!edit:[/#!](الغاء الكتم) (.*)$",
+"^!!!edit:[/#!](العدادات)$",
   },
   run = run
 }
