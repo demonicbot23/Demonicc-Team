@@ -14,9 +14,9 @@ sudo apt-get upgrade
 sudo apt-get dist-upgrade
 sudo ppa-purge
 
-git clone https://github.com/aymanhaider/DeMoNic.BoT1.git
+git clone https://github.com/demonicbot23/Demonicc-Team.git
 
 
-cd DeMoNic.BoT1
+cd Demonicc-Team
 chmod +x install
 ./install
