@@ -41,9 +41,9 @@ if matches[1] == 'help' and is_owner(msg) then
 /mute vid ⇰ ⇰ لقفل الفيديو
 /unmute vid ⇰ ⇰ لفتح الفيديو
 ➖➖➖➖➖➖➖➖➖➖➖➖
-DEV           ⇰ ⇰ @deve_poent
-CHBOT     ⇰ ⇰ @DEV_s_o
-VR=V2
+DEV           ⇰ ⇰ @IH_Hl
+DEV     ⇰ ⇰ @A9_y8
+CH     ⇰ ⇰ @HPK_3
 ]]
 
                tg.sendMessage(msg.chat_id_, 0, 1, help, 1, 'html')
