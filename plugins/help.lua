@@ -1,5 +1,5 @@
---@aymanwasfe1
---@Mostank_GT
+--@IH_Hl
+--@A9_y8
 local function run(msg, matches)
 if matches[1] == 'help' and is_owner(msg) then
  local help = [[
@@ -32,7 +32,7 @@ if matches[1] == 'help' and is_owner(msg) then
 /unmute pho ⇰ ⇰ لفتح الصور
 /mute doc ⇰ ⇰ لقفل الملفات
 /unmute doc ⇰ ⇰ لفتح الملفات
-/mute gif :⇰⇰ لقفل المتحركة
+/mute gif ⇰ ⇰ لقفل المتحركة
 /unmute gif ⇰ ⇰ لفتح المتحركة
 /mute aud ⇰ ⇰ mp3 لقفل
 /unmute aud ⇰ ⇰ mp3 لفتح
@@ -41,8 +41,8 @@ if matches[1] == 'help' and is_owner(msg) then
 /mute vid ⇰ ⇰ لقفل الفيديو
 /unmute vid ⇰ ⇰ لفتح الفيديو
 ➖➖➖➖➖➖➖➖➖➖➖➖
-DEV           ⇰ ⇰ @Mostank_GT
-CHBOT     ⇰ ⇰ @Ol56lO_dev
+DEV           ⇰ ⇰ @deve_poent
+CHBOT     ⇰ ⇰ @DEV_s_o
 VR=V2
 ]]
 
@@ -52,9 +52,9 @@ end
 end
 return {
   patterns = {
-    "^[#!/](الاوامر)$",
+    "^[#!/](help)$",
   },
   run = run
 }
---@aymanwasfe1
---@Mostank_GT
+--@IH_Hl
+--@A9_y8
