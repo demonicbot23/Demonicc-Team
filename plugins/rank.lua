@@ -1,5 +1,5 @@
---@aymanwasfe1
---@Mostank_GT
+--@IH_Hl
+--@A9_y8
 local function run(msg, matches)
 local group = load_data('bot/group.json')
 local addgroup = group[tostring(msg.chat_id)]
@@ -81,5 +81,5 @@ return {
   },
   run = run
 }
---@aymanwasfe1
---@Mostank_GT
+--@IH_Hl
+--@A9_y8
